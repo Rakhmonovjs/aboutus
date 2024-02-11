@@ -6,8 +6,14 @@ import SecondImg from "../img/2.jpg";
 import { FaFacebook, FaStar } from "react-icons/fa";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import BrandImg from "../img/1.png";
-import { IoCallOutline } from "react-icons/io5";
-import { CiMail } from "react-icons/ci";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
+
+// import { IoCallOutline } from "react-icons/io5";
+// import { CiMail } from "react-icons/ci";
+
 
 
 const AboutUs = () => {
@@ -19,17 +25,17 @@ const AboutUs = () => {
     },
     {
       img: FirstCardImg,
-      name: "Annette Black2",
+      name: "Theresa Webb",
       desc: "CEO Fouder",
     },
     {
       img: FirstCardImg,
-      name: "Annette Black3",
+      name: "Eleanor Pena",
       desc: "CEO Fouder",
     },
     {
       img: FirstCardImg,
-      name: "Annette Blac4k",
+      name: "Jane Cooper",
       desc: "CEO Fouder",
     },
   ];
@@ -115,16 +121,16 @@ const AboutUs = () => {
             <p>Stores around the world</p>
           </div>
           <div className="colobrate_card">
-            <h2>120 +</h2>
-            <p>Stores around the world</p>
+            <h2>15 M +</h2>
+            <p>Products sold till date</p>
           </div>
           <div className="colobrate_card">
-            <h2>120 +</h2>
-            <p>Stores around the world</p>
+            <h2>220+ K</h2>
+            <p>Registered users</p>
           </div>
           <div className="colobrate_card">
-            <h2>120 +</h2>
-            <p>Stores around the world</p>
+            <h2>300 +</h2>
+            <p>Brands available in store</p>
           </div>
         </div>
       </section>
@@ -143,13 +149,13 @@ const AboutUs = () => {
                     <FaFacebook />
                   </a>
                   <a href="">
-                    <FaFacebook />
+                    <FaTwitter />
                   </a>
                   <a href="">
-                    <FaFacebook />
+                    <FaInstagram />
                   </a>
                   <a href="">
-                    <FaFacebook />
+                    <FaLinkedinIn />
                   </a>
                 </div>
               </div>
@@ -259,7 +265,7 @@ const AboutUs = () => {
       </section>
 
       <hr className="hr" />
-      <section className="inpform">
+      {/* <section className="inpform">
         <h1>Subscribe and get 20% discount.</h1>
         <div className="inpform_inp">
           <input placeholder="Your email address" type="text" />
@@ -276,8 +282,14 @@ const AboutUs = () => {
                   <h5> Monday-Friday: 08am-9pm </h5>
                   <a href="#" >+(1) 234 567 890</a>
                 </div>
+
+                <div className="contactus_two">
+                  <i><CiMail/></i>
+                  <h5> Need help with your order? </h5>
+                  <a href="locaclhost:3000/aboutus" >support@zeomart.com</a>
+                </div>
             </div>
-      </section>
+      </section> */}
     </div>
   );
 };

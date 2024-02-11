@@ -176,11 +176,24 @@
   gap: 5px;
   flex-direction: column;
 }
+
+@keyframes countUp {
+  from {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 10;
+    transform: translateY(0);
+  }
+}
+
 .colobrate_card h2 {
+
+
   color: #041e42;
   font-size: 50px;
   font-weight: 500;
-
   font-family: Jost;
 }
 .colobrate p {
@@ -524,7 +537,7 @@
 Info us
 / */
 
-.infous{
+/* .infous{
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -539,8 +552,7 @@ Info us
 
 .infous::after{
   box-sizing: border-box;
-
-}/* CSS kodingiz */
+} 
 .contactus { 
   display: flex;
   flex-wrap: wrap;
@@ -548,7 +560,6 @@ Info us
   text-align: left;
   gap: 0px 100px;
   flex-direction: row;
-  margin-top: 30px;
   color: #041e42;
   font-style: normal;
   font-weight: 500;
@@ -602,9 +613,6 @@ Info us
   transition: all 0.3s ease 0s;
 }
 
-.contactus_first i::before {
-  font-family: flaticon!important;
-}
 
 .contactus_first h5 {
   color: #041e42;
@@ -625,3 +633,36 @@ Info us
   color: #041e42;
   cursor: pointer;
 }
+
+.contactus_two i {
+  color: #041e42;
+  font-size: 30px;
+}
+.contactus_two i::after{
+  font-family: flaticon!important;
+  font-style: normal;
+  font-weight: 400!important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.contactus_two h5 {
+    color: #041e42;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.contactus_two a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #041e42;
+} */
