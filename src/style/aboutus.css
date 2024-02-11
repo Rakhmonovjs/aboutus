@@ -1,0 +1,627 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.aboutus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.aboutus_img {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.aboutus_left {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.aboutus_left_img_first {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutus_left_img_first img {
+  width: 100%;
+}
+
+.aboutus_description {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutus_description_top {
+  gap: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutus_description_top h1 {
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+.aboutus_description_top h2 {
+  font-size: 20px;
+  font-family: Jost;
+  font-weight: 500;
+}
+.aboutus_description_top p {
+  color: #041e42;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0em;
+}
+.aboutus_description_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.aboutus_description_bottom_card {
+  width: 45%;
+  min-width: 400px;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutus_description_bottom_card h1 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Jost;
+  line-height: 29px;
+}
+.aboutus_description_bottom_card p {
+  color: #041e42;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0em;
+}
+@media (max-width: 991px) {
+  .aboutus {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .aboutus_left {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .aboutus_description_bottom {
+    justify-content: center;
+  }
+  .aboutus_description_bottom_card {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .aboutus_left {
+    flex-direction: column;
+  }
+}
+.hr {
+  max-width: 1200px;
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.colobrate {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.colobrate_title h1 {
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 500;
+}
+.colobrate_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 90px;
+  flex-wrap: wrap;
+}
+.colobrate_card {
+  text-align: center;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.colobrate_card h2 {
+  color: #041e42;
+  font-size: 50px;
+  font-weight: 500;
+
+  font-family: Jost;
+}
+.colobrate p {
+  font-family: "Jost", sans-serif;
+  line-height: 1.4;
+  color: #041e42;
+}
+.ourteams {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.ourteams_title h1 {
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 500;
+}
+.ourteams_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ourteams_card {
+  width: 23%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.ourteams_card img {
+  width: 100%;
+}
+.ourteams_card h2 {
+  font-family: "Jost", sans-serif;
+  color: #041e42;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.ourteams_card h3 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #626974;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.ourteams_card_img {
+  position: relative;
+  overflow: hidden;
+}
+.ourteams_card_hover {
+  width: 100%;
+  transition: 0.9s;
+  gap: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  background-color: rgba(245, 195, 75, 0.9);
+}
+.ourteams_card_img:hover .ourteams_card_hover {
+  top: 0px;
+}
+.ourteams_card_hover a {
+  color: #000;
+  cursor: pointer;
+}
+.other_desc {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.other_desc_left {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.other_desc_right {
+  width: 45%;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+.other_desc_left h1 {
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 500;
+}
+.other_desc_right p {
+  color: #041e42;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.other_desc_right button {
+  background-color: #ffffff;
+  border: 2px solid #f5c34b;
+  border-radius: 6px;
+  color: #041e42;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  height: 52px;
+  line-height: 35px;
+  width: 140px;
+  transition: 0.8s;
+  box-shadow: 0px 5px 20px rgba(245, 195, 75, 0.15);
+}
+.other_desc_right button:hover {
+  background-color: #e8b336;
+}
+.should {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.should_title h1 {
+  font-family: Jost;
+  font-size: 28px;
+  font-weight: 500;
+}
+.should_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 90px;
+  flex-wrap: wrap;
+}
+.should_card {
+  text-align: center;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+.should_card h2 {
+  color: #041e42;
+  font-size: 50px;
+  font-weight: 500;
+
+  font-family: Jost;
+}
+.should h3 {
+  font-family: "Jost", sans-serif;
+  line-height: 1.4;
+  color: #041e42;
+}
+.should p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #626974;
+  font-family: "Jost";
+}
+
+.swiper {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #f3f5f6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.swiper h1 {
+  color: #041e42;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.swiper_star {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.swiper h2 {
+  color: #041e42;
+  font-size: 26px;
+  margin-top: 40px;
+  font-family: "Jost";
+  font-weight: 500;
+  line-height: 50px;
+}
+.swiper h3 {
+  color: #041e42;
+  font-size: 16px;
+  margin-top: 40px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.swiper h4 {
+  color: #041e42;
+  font-style: normal;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.swiper_num {
+  margin-top: 100px;
+}
+.swiper_num p {
+  color: #041e42;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+
+  font-family: "Jost";
+}
+@media (max-width: 600px) {
+  .swiper h3 {
+    margin-top: 20px;
+  }
+  .swiper_num {
+    margin-top: 50px;
+  }
+  .swiper_star {
+    margin-top: 20px;
+  }
+  .swiper h2 {
+    margin-top: 20px;
+  }
+}
+.brands {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column;
+}
+.brands_title h5 {
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  line-height: 1.4;
+  color: #041e42;
+}
+.brands_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px 100px;
+  margin-top: 40px;
+}
+.brands_card {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brands_card img {
+  width: 100%;
+}
+.inpform {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inpform_inp {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inpform h1 {
+  color: #041e42;
+  font-family: Jost;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; 
+  letter-spacing: 0em;
+  margin-bottom: 30px;
+}
+.inpform_inp input {
+  width: 40%;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  color: #041e42;
+  height: 60px;
+  padding-left: 20px;
+}
+.inpform_inp button {
+  border-radius: 6px;
+  color: #041e42;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  height: 60px;
+  letter-spacing: 0em;
+  line-height: 30px;
+  outline: none;
+  text-align: center;
+  width: 136px;
+  background-color: #f5c34b;
+  border: 1px solid #f5c34b;
+  color: #041e42;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+/* /
+Info us
+/ */
+
+.infous{
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+
+
+}
+
+.infous::after{
+  box-sizing: border-box;
+
+}/* CSS kodingiz */
+.contactus { 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  text-align: left;
+  gap: 0px 100px;
+  flex-direction: row;
+  margin-top: 30px;
+  color: #041e42;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 26px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .contactus {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactus {
+    width: 41.66666667%;
+  }
+}
+
+
+
+.contactus h4 {
+  color: #041e42;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 26px;
+  margin-bottom: 23px;
+  margin-top: 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.contactus_first {
+  display: flex;
+  margin-bottom: 1.5rem!important;
+  text-align: start;
+  width: 300px;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.contactus_first i {
+  color: #041e42;
+  font-size: 30px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+.contactus_first i::before {
+  font-family: flaticon!important;
+}
+
+.contactus_first h5 {
+  color: #041e42;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.contactus_first a {
+  text-decoration: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #041e42;
+  cursor: pointer;
+}
