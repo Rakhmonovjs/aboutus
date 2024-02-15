@@ -1,11 +1,12 @@
 import React from "react";
 import AboutUs from "./pages/AboutUs";
+import Detail from "./Accaunt/Details/Detail";
 
 
 function Home() {
     return (
       <div>
-            <h2 className="animated-number">120+</h2> <AboutUs/>
+        Hello
       </div>
     );
   }

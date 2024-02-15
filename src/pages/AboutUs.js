@@ -10,10 +10,17 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
+import { useSpring,animated } from 'react-spring';
 
-// import { IoCallOutline } from "react-icons/io5";
-// import { CiMail } from "react-icons/ci";
-
+  function Nummber ({ n })  {
+    const { number } = useSpring({
+      from: {number: 0 },
+      number: n,
+      delay: 200,
+      config: { mass:1, tension: 20, friction: 10 },
+    });
+    return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+  }
 
 
 const AboutUs = () => {
@@ -117,19 +124,19 @@ const AboutUs = () => {
         </div>
         <div className="colobrate_cards">
           <div className="colobrate_card">
-            <h2>120 +</h2>
+            <h2><Nummber n={120}/>+</h2>
             <p>Stores around the world</p>
           </div>
           <div className="colobrate_card">
-            <h2>15 M +</h2>
+            <h2><Nummber n={15}/>M +</h2>
             <p>Products sold till date</p>
           </div>
           <div className="colobrate_card">
-            <h2>220+ K</h2>
+            <h2><Nummber n={220}/>+ K</h2>
             <p>Registered users</p>
           </div>
           <div className="colobrate_card">
-            <h2>300 +</h2>
+            <h2><Nummber n={330}/> </h2>
             <p>Brands available in store</p>
           </div>
         </div>
